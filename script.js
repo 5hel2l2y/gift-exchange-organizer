@@ -18,3 +18,29 @@
 
 // Feel free to upload your solution as a gist on GitHub and respond to this email with the appropriate link.If you prefer, you can respond to this email with a screenshot of your solution too.
 
+const app = {};
+
+app.member = document.querySelector('member');
+app.memberList = document.getElementById('memberList');
+
+app.listeners = (e) => {
+  e.preventDefault();
+
+  if(e.target.id === 'add') {  
+    const listItem = document.createElement('li');
+    listItem.textContent = member.value;
+
+    memberList.appendChild(listItem);
+  } else if(e.target.id === 'generate') {
+    // generate random list
+  } else if(e.target.id === 'reset') {
+    // reset list
+  }
+};
+
+app.init = () => {
+  console.log('we cool');
+  document.onclick = app.listeners;
+};
+
+app.init();
