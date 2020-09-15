@@ -38,7 +38,6 @@ app.listeners = (e) => {
 
     app.finalList.innerHTML = '';
     app.finalList.innerHTML = finalMatch.map((match) => {
-      console.log(match)
       return `<li> ${match.giver} gives a gift to ${match.receiver} </li>`;
     }).join('');
   } else if(e.target.id === 'reset') {
@@ -86,7 +85,6 @@ app.randomizer = (members) => {
 }
 
 app.init = () => {
-  console.log('we cool');
   document.onclick = app.listeners;
 };
 
