@@ -28,3 +28,14 @@ You are tasked with organizing a gift exchange among friends; every member of th
 // Beth gives a gift to Susan
 ```
 
+## Run
+
+### Initial approach
+
+* Download and open index.html
+
+### Overcome an realization
+
+```javascript
+node gift-exchange.js
+```
